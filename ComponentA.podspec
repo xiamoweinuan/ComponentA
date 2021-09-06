@@ -39,4 +39,15 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+    s.subspec 'Category' do |ss|
+        ss.source_files = "ComponentA/Classes/Category/**/*.{h,m}"
+    end
+  s.subspec 'Macro' do |ss|
+      ss.source_files = "ComponentA/Classes/Macro/**/*.{h,m}"
+  end
+
+  s.subspec 'SComponent' do |ss|
+      ss.source_files = "ComponentA/Classes/SComponent/**/*.{h,m}"
+  
 end

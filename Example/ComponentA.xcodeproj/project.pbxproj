@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1555719ED5A02088DCB246E4 /* Pods-ComponentA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentA_Example.debug.xcconfig"; path = "Target Support Files/Pods-ComponentA_Example/Pods-ComponentA_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		247FF5A6024C10C353A49F90 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		247FF5A6024C10C353A49F90 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3D7A32D8E1975899819F491B /* Pods_ComponentA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComponentA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ComponentA_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComponentA_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,9 +60,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76ADE1BECEB9DFD7452E5CFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		76ADE1BECEB9DFD7452E5CFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99C681A28200706A64101D16 /* ComponentA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ComponentA.podspec; path = ../ComponentA.podspec; sourceTree = "<group>"; };
+		99C681A28200706A64101D16 /* ComponentA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ComponentA.podspec; path = ../ComponentA.podspec; sourceTree = "<group>"; };
 		A80013A1CE723B32902AC1F3 /* Pods-ComponentA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentA_Tests.release.xcconfig"; path = "Target Support Files/Pods-ComponentA_Tests/Pods-ComponentA_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AEA33167365B52C847C200DF /* Pods-ComponentA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentA_Example.release.xcconfig"; path = "Target Support Files/Pods-ComponentA_Example/Pods-ComponentA_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4410BDBAE96DAAA3709EF91 /* Pods_ComponentA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComponentA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				E7E86D9DF80BEC96911A31E8 /* Pods-ComponentA_Tests.debug.xcconfig */,
 				A80013A1CE723B32902AC1F3 /* Pods-ComponentA_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = gaos;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = X2HXU78BM6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,6 +516,7 @@
 			baseConfigurationReference = 1555719ED5A02088DCB246E4 /* Pods-ComponentA_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2HXU78BM6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComponentA/ComponentA-Prefix.pch";
 				INFOPLIST_FILE = "ComponentA/ComponentA-Info.plist";
@@ -529,6 +533,7 @@
 			baseConfigurationReference = AEA33167365B52C847C200DF /* Pods-ComponentA_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X2HXU78BM6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComponentA/ComponentA-Prefix.pch";
 				INFOPLIST_FILE = "ComponentA/ComponentA-Info.plist";
